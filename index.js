@@ -4,19 +4,19 @@ function calculate(operation) {
 
   // checking if user is providing valid input or not
   if (!num1 || !num2) {
-    alert("Please correct your values");
+    return alert("Please correct your values");
   }
   if (operation === "add") {
-    document.getElementById("result").innerHTML = num1 + num2;
+    return (document.getElementById("result").innerHTML = num1 + num2);
   }
   if (operation === "subtract") {
-    document.getElementById("result").innerHTML = num1 - num2;
+    return (document.getElementById("result").innerHTML = num1 - num2);
   }
   if (operation === "divide") {
-    document.getElementById("result").innerHTML = num1 / num2;
+    return (document.getElementById("result").innerHTML = num1 / num2);
   }
   if (operation === "multiply") {
-    document.getElementById("result").innerHTML = num1 * num2;
+    return (document.getElementById("result").innerHTML = num1 * num2);
   }
 }
 
