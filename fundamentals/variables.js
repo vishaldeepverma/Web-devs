@@ -36,6 +36,7 @@ let _ = 2; // and now a variable with the name "_"
 alert($ + _); // 3
 
 Case matters
+------------
 Variables named apple and APPLE are two different variables.
 
 Non-Latin letters are allowed, but not recommended
