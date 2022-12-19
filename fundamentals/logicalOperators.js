@@ -36,6 +36,8 @@ if (hour < 10 || hour > 18 || isWeekend) {
 OR "||" finds the first truthy value
 ------------------------------------
 
+The falsy values in JavaScript are 0, 0n, null, undefined, false, NaN, and the empty string ""
+
 Given multiple OR’ed values:
 
 result = value1 || value2 || value3;
@@ -81,6 +83,9 @@ alert( false && true );  // false
 alert( true && false );  // false
 alert( false && false ); // false
 
+AND “&&” finds the first falsy value
+------------------------------------
+
 
 ! (NOT)
 -------
@@ -96,5 +101,16 @@ The operator accepts a single argument and does the following:
 
 Converts the operand to boolean type: true/false.
 Returns the inverse value
+
+
+?? (Nullish Coalescing)
+-----------------------
+
+The nullish coalescing operator is written as two question marks ??.
+
+The result of a ?? b is:
+
+if a is defined, then a,
+if a isn’t defined, then b.
 
 */
